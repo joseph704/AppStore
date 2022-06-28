@@ -50,6 +50,7 @@ final class AppDetailViewController: UIViewController {
         let button = UIButton()
         button.setImage(UIImage(systemName: "square.and.arrow.up"), for: .normal)
         button.tintColor = .systemBlue
+        button.addTarget(self, action: #selector(didTapShareButton), for: .touchUpInside)
         
         return button
     }()
@@ -112,5 +113,17 @@ private extension AppDetailViewController {
             $0.leading.equalTo(titleLabel.snp.leading)
             $0.width.equalTo(60.0)
         }
+        
+        shareButton.snp.makeConstraints {
+            $0.trailing.equalToSuperview().inset(32.0)
+            $0.bottom.equalTo(downloadButton.snp.bottom)
+            $0.width.height.equalTo(30.0)
+        }
+    }
+    
+    @objc func didTapShareButton() {
+        let activityItems: [Any] = [today.title]
+        let activityViewController = UIActivityViewController(activityItems: activityItems, applicationActivities: nil)
+        present(activityViewController, animated: true)
     }
 }
