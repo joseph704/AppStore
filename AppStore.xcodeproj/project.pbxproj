@@ -17,6 +17,13 @@
 		0453B641286339B800CB4C32 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 0453B640286339B800CB4C32 /* Kingfisher */; };
 		0453B64328633AFB00CB4C32 /* TodayCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0453B64228633AFB00CB4C32 /* TodayCollectionViewCell.swift */; };
 		0453B64528633F2900CB4C32 /* TodayCollectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0453B64428633F2900CB4C32 /* TodayCollectionHeaderView.swift */; };
+		0484AEA7286B193C007771A9 /* AppDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0484AEA6286B193C007771A9 /* AppDetailViewController.swift */; };
+		0484AEAB286B211F007771A9 /* RankingFeature.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0484AEA8286B211F007771A9 /* RankingFeature.plist */; };
+		0484AEAC286B211F007771A9 /* Feature.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0484AEA9286B211F007771A9 /* Feature.plist */; };
+		0484AEAD286B211F007771A9 /* Today.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0484AEAA286B211F007771A9 /* Today.plist */; };
+		0484AEB0286B2226007771A9 /* Today.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0484AEAF286B2226007771A9 /* Today.swift */; };
+		0484AEB2286B22B0007771A9 /* Feature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0484AEB1286B22B0007771A9 /* Feature.swift */; };
+		0484AEB4286B230B007771A9 /* Raking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0484AEB3286B230B007771A9 /* Raking.swift */; };
 		04CC03582869C6B8008321F2 /* AppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CC03572869C6B8008321F2 /* AppViewController.swift */; };
 		04CC035B2869CC7E008321F2 /* FeatureSectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CC035A2869CC7E008321F2 /* FeatureSectionView.swift */; };
 		04CC035D2869D0B6008321F2 /* FeatureSectionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04CC035C2869D0B6008321F2 /* FeatureSectionCollectionViewCell.swift */; };
@@ -37,6 +44,13 @@
 		0453B63A2863370E00CB4C32 /* TodayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
 		0453B64228633AFB00CB4C32 /* TodayCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayCollectionViewCell.swift; sourceTree = "<group>"; };
 		0453B64428633F2900CB4C32 /* TodayCollectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayCollectionHeaderView.swift; sourceTree = "<group>"; };
+		0484AEA6286B193C007771A9 /* AppDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDetailViewController.swift; sourceTree = "<group>"; };
+		0484AEA8286B211F007771A9 /* RankingFeature.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = RankingFeature.plist; sourceTree = "<group>"; };
+		0484AEA9286B211F007771A9 /* Feature.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Feature.plist; sourceTree = "<group>"; };
+		0484AEAA286B211F007771A9 /* Today.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Today.plist; sourceTree = "<group>"; };
+		0484AEAF286B2226007771A9 /* Today.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Today.swift; sourceTree = "<group>"; };
+		0484AEB1286B22B0007771A9 /* Feature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feature.swift; sourceTree = "<group>"; };
+		0484AEB3286B230B007771A9 /* Raking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Raking.swift; sourceTree = "<group>"; };
 		04CC03572869C6B8008321F2 /* AppViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppViewController.swift; sourceTree = "<group>"; };
 		04CC035A2869CC7E008321F2 /* FeatureSectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureSectionView.swift; sourceTree = "<group>"; };
 		04CC035C2869D0B6008321F2 /* FeatureSectionCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureSectionCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -80,10 +94,14 @@
 			children = (
 				0453B6242863331E00CB4C32 /* AppDelegate.swift */,
 				0453B6262863331E00CB4C32 /* SceneDelegate.swift */,
+				0484AEAE286B2123007771A9 /* Data */,
 				0453B638286336EA00CB4C32 /* Scenes */,
 				0453B62D2863331F00CB4C32 /* Assets.xcassets */,
 				0453B62F2863331F00CB4C32 /* LaunchScreen.storyboard */,
 				0453B6322863331F00CB4C32 /* Info.plist */,
+				0484AEAF286B2226007771A9 /* Today.swift */,
+				0484AEB1286B22B0007771A9 /* Feature.swift */,
+				0484AEB3286B230B007771A9 /* Raking.swift */,
 			);
 			path = AppStore;
 			sourceTree = "<group>";
@@ -94,6 +112,7 @@
 				04CC03592869C6BC008321F2 /* App */,
 				0453B639286336FB00CB4C32 /* Today */,
 				0453B6282863331E00CB4C32 /* TabBarController.swift */,
+				0484AEA6286B193C007771A9 /* AppDetailViewController.swift */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -106,6 +125,16 @@
 				0453B64428633F2900CB4C32 /* TodayCollectionHeaderView.swift */,
 			);
 			path = Today;
+			sourceTree = "<group>";
+		};
+		0484AEAE286B2123007771A9 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				0484AEA9286B211F007771A9 /* Feature.plist */,
+				0484AEA8286B211F007771A9 /* RankingFeature.plist */,
+				0484AEAA286B211F007771A9 /* Today.plist */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 		04CC03592869C6BC008321F2 /* App */ = {
@@ -188,8 +217,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0484AEAB286B211F007771A9 /* RankingFeature.plist in Resources */,
+				0484AEAD286B211F007771A9 /* Today.plist in Resources */,
 				0453B6312863331F00CB4C32 /* LaunchScreen.storyboard in Resources */,
 				0453B62E2863331F00CB4C32 /* Assets.xcassets in Resources */,
+				0484AEAC286B211F007771A9 /* Feature.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,8 +233,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				0453B63B2863370E00CB4C32 /* TodayViewController.swift in Sources */,
+				0484AEB0286B2226007771A9 /* Today.swift in Sources */,
 				0453B6292863331E00CB4C32 /* TabBarController.swift in Sources */,
 				04CC03672869E1F1008321F2 /* ExchangeCodeButtonView.swift in Sources */,
+				0484AEB2286B22B0007771A9 /* Feature.swift in Sources */,
 				04CC03612869D434008321F2 /* SeparatorView.swift in Sources */,
 				0453B6252863331E00CB4C32 /* AppDelegate.swift in Sources */,
 				0453B64528633F2900CB4C32 /* TodayCollectionHeaderView.swift in Sources */,
@@ -211,6 +245,8 @@
 				0453B6272863331E00CB4C32 /* SceneDelegate.swift in Sources */,
 				0453B64328633AFB00CB4C32 /* TodayCollectionViewCell.swift in Sources */,
 				04CC035B2869CC7E008321F2 /* FeatureSectionView.swift in Sources */,
+				0484AEA7286B193C007771A9 /* AppDetailViewController.swift in Sources */,
+				0484AEB4286B230B007771A9 /* Raking.swift in Sources */,
 				04CC03632869D60B008321F2 /* RankingFeatureSectionView.swift in Sources */,
 				04CC03652869DC3E008321F2 /* RankingFeatureCollectionViewCell.swift in Sources */,
 			);
